@@ -22,7 +22,7 @@ def main():
         elif otra_persona == "no":
             break
         else:
-            print("Vuelve a iniciar el programa.")
+            print("????????????.")
             break
     print()
     print("Los invitados son:")
