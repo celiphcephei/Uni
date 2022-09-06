@@ -3,6 +3,10 @@ def mathMain():
     opc = input("¿Qué quieres hacer?")
 
 
+def ciencias():
+    print("Lorem")
+
+
 
 def main():
     print("Proyecto Integrador")
@@ -19,9 +23,14 @@ def main():
         if opcion == "renato" or opcion == "matematicas" or opcion == "matemáticas":
             print()
             mathMain()
-            iniciador += 1
         elif opcion == "ciencias":
             pass
+        elif opcion == "ciencias":
+            pass
+        else:
+            print()
+            print("Elige una opción válida")
+            continue
 
 
 
