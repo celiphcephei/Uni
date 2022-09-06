@@ -20,6 +20,7 @@ def main():
 
     while iniciador == 0:
         opcion = input("¿Qué quieres probar?\nEscribe el nombre del integrante o el nombre del módulo\nMatemáticas (Renato)\nCiencias()\nLectura ()\n")
+        opcion.lower()
         if opcion == "renato" or opcion == "matematicas" or opcion == "matemáticas":
             print()
             mathMain()
