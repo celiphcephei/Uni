@@ -13,11 +13,7 @@ def main():
     print("Tecnológico de Monterrey")
     print("Renato García Morán A01799387")
     print()
-
-    opcion = ''
-    opcion.lower()
     iniciador = 0
-
     while iniciador == 0:
         opcion = input("¿Qué quieres probar?\nEscribe el nombre del integrante o el nombre del módulo\nMatemáticas (Renato)\nCiencias()\nLectura ()\n")
         opcion.lower()
