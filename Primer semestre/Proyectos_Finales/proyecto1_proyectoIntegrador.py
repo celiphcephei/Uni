@@ -54,9 +54,9 @@ def main():
         if opcion == "renato" or opcion == "matematicas" or opcion == "matemáticas":
             print()
             mathMain()
-        elif opcion == "ciencias":
+        elif opcion == "josé" or opcion == "jose" or opcion == "ciencias":
             pass
-        elif opcion == "ciencias":
+        elif opcion == "andrés" or opcion == "andrés" or opcion == "lectura":
             pass
         else:
             print()
