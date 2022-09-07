@@ -69,6 +69,11 @@ def ejercicio_multiplicaciones():
 
 def mathMain():
     print("Bienvenido al módulo de matemáticas")
+    volver = input("Si quieres volver a la pantalla de inicio escribe 'Volver', si no, escribe 'No': ")
+    volver = volver.lower()
+    if volver == "volver":
+        main()
+    print()
     print("¿Qué quieres ver?\nEscribe el número corresponiente.")
     iniciador = 0
     opc = 0
@@ -84,6 +89,7 @@ def mathMain():
             print()
             print("Elige una opción válida")
             continue
+    volver = input("Si quieres volver")
 
 
     
