@@ -55,8 +55,10 @@ def main():
             print()
             mathMain()
         elif opcion == "josé" or opcion == "jose" or opcion == "ciencias":
+            print()
             pass
         elif opcion == "andrés" or opcion == "andrés" or opcion == "lectura":
+            print()
             pass
         else:
             print()
