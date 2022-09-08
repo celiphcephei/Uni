@@ -113,7 +113,7 @@ def main():
         elif opcion == "josé" or opcion == "jose" or opcion == "ciencias":
             print()
             pass
-        elif opcion == "andrés" or opcion == "andrés" or opcion == "lectura":
+        elif opcion == "andrés" or opcion == "andres" or opcion == "lectura":
             print()
             pass
         else:
