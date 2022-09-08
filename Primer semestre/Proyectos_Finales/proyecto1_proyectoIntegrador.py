@@ -26,13 +26,21 @@ def ejercicios_multiplicaciones():
     if puntos == 10:
         print("Felicidades, sabes multiplicar")
         print()
+        volver = input("Si quieres volver a la pantalla de matemáticas escribe 'Volver', si quieres volver a intentarlo no solo escribe 'No'.\n")
+        volver = volver.lower()
+        if volver == "volver":
+            mathMain()
     elif puntos > 6:
         print("¡Puedes seguir practicando para alcanzar la perfección!")
         print()
     else:
-        print("Escribe 'ayuda' para ver la tabla que quieras estudiar")
-        print()
-            
+        ayuda = int(input("Escribe el número de la tabla que más trabajo te cuesta.\n"))
+        tablas_de_multiplicar(ayuda)
+        print("Puedes volver a intentarlo cuantas veces quieras.")
+        volver1 = input("Si quieres volver a la pantalla de matemáticas escribe 'Volver', si quieres volver a intentarlo no solo escribe 'No'.\n")
+        volver1 = volver1.lower()
+        if volver1 == "volver":
+            mathMain()
     
 
 
@@ -69,22 +77,22 @@ def ejercicio_multiplicaciones():
 
 def mathMain():
     print("Bienvenido al módulo de matemáticas")
-    volver = input("Si quieres volver a la pantalla de inicio escribe 'Volver', si no, escribe 'No': ")
-    volver = volver.lower()
-    if volver == "volver":
-        main()
     print()
-    print("¿Qué quieres ver?\nEscribe el número corresponiente.")
+    print("¿Qué quieres ver?\nEscribe el número corresponiente.\nSi quieres volver a la pantalla de inicio escribe 'Volver'")
     iniciador = 0
     opc = 0
     while iniciador == 0:
-        opc = int(input("\4 1 Multiplicaciones\n\4 2 Lorem\n\4 3 Lorem\n"))
-        if opc == 1:
+        opc = input("\4 1 Multiplicaciones\n\4 2 Lorem\n\4 3 Lorem\n")
+        opc == opc.lower()
+        if opc == "1":
             ejercicio_multiplicaciones()
-        elif opc == 2:
+        elif opc == "2":
             pass
-        elif opc == 3:
+        elif opc == "3":
             pass
+        elif opc == "volver":
+            print()
+            main()
         else:
             print()
             print("Elige una opción válida")
@@ -124,3 +132,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
+
