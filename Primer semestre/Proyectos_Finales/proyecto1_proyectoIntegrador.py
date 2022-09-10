@@ -1,12 +1,17 @@
 import random
 
 
+def jerarquia_de_operaciones():
+    pass
+
+
 def tablas_de_multiplicar(n):
     print()
     print("La tabla del {}.".format(n))
     for i in range(11):
         print("{} X {} = {}".format(n, i, i * n))
     print()
+
 
 def ejercicios_multiplicaciones():
     puntos = 0
@@ -76,9 +81,6 @@ def ejercicio_multiplicaciones():
                 continue
 
 
-
-
-
 def mathMain():
     print("Bienvenido al módulo de matemáticas")
     print()
@@ -89,7 +91,7 @@ def mathMain():
         opc = input("\4 1 Jerarquia de operaciones\n\4 2 Multiplicaciones\n\4 3 Fracciones y divisiones\n")
         opc == opc.lower()
         if opc == "1":
-            pass
+            jerarquia_de_operaciones()
         elif opc == "2":
             ejercicio_multiplicaciones()
         elif opc == "3":
