@@ -33,6 +33,10 @@ def ejercicios_multiplicaciones():
     elif puntos > 6:
         print("¡Puedes seguir practicando para alcanzar la perfección!")
         print()
+        volver0 = input("Si quieres volver a la pantalla de matemáticas escribe 'Volver', si quieres volver a intentarlo no solo escribe 'No'.\n")
+        volver0 = volver0.lower()
+        if volver0 == "volver":
+            mathMain
     else:
         ayuda = int(input("Escribe el número de la tabla que más trabajo te cuesta.\n"))
         tablas_de_multiplicar(ayuda)
@@ -97,13 +101,6 @@ def mathMain():
             print()
             print("Elige una opción válida")
             continue
-    volver = input("Si quieres volver")
-
-
-    
-
-def ciencias():
-    print("")
 
 
 def main():
