@@ -86,12 +86,12 @@ def mathMain():
     iniciador = 0
     opc = 0
     while iniciador == 0:
-        opc = input("\4 1 Multiplicaciones\n\4 2 Lorem\n\4 3 Lorem\n")
+        opc = input("\4 1 Jerarquia de operaciones\n\4 2 Multiplicaciones\n\4 3 Fracciones y divisiones\n")
         opc == opc.lower()
         if opc == "1":
-            ejercicio_multiplicaciones()
-        elif opc == "2":
             pass
+        elif opc == "2":
+            ejercicio_multiplicaciones()
         elif opc == "3":
             pass
         elif opc == "volver":
