@@ -2,8 +2,14 @@ import random
 
 
 def jerarquia_de_operaciones():
-    pass
-
+    print()
+    print("Vamos a ver la Jerarquia de operaciones.")
+    inicio1 = random.randint(0, 10)
+    inicio2 = random.randint(0,10)
+    inicio3 = random.randint(0, 10)
+    inicio4 = random.randint(0,10)
+    while True:
+        opcion = input("Para comenzar di el resultado de {} + {} X {} X {}".format(inicio1, inicio2, inicio3, inicio4))
 
 def tablas_de_multiplicar(n):
     print()
@@ -53,7 +59,7 @@ def ejercicios_multiplicaciones():
     
 
 
-def ejercicio_multiplicaciones():
+def multiplicaciones():
     print()
     print("Vamos a ver las multiplicaciones.")
     inicio1 = random.randint(0, 10)
@@ -93,7 +99,7 @@ def mathMain():
         if opc == "1":
             jerarquia_de_operaciones()
         elif opc == "2":
-            ejercicio_multiplicaciones()
+            multiplicaciones()
         elif opc == "3":
             pass
         elif opc == "volver":
