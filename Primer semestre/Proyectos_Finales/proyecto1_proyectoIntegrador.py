@@ -7,6 +7,7 @@ def propiedades_nr():
     Explica las propiedades de los números reales.
     """
     propiedades = {
+        "Conmutativa" : "a + b = b + a",
         "Distributiva" : None,
         "Asociativa" : None,
         "Lorem" : None
@@ -110,7 +111,13 @@ def ejercicios_multiplicaciones():
         respuesta = 0
         print("Cuál es el número faltante en")
         print("? X {} = {}".format(i, resultado))
-        respuesta = int(input())
+        while True:
+            try:
+                respuesta = int(input())
+                break
+            except:
+                print("¿Tuviste un error de dedo?\nEsrcibe un número.")
+                print()
         respuesta = respuesta * i
         #Si el usuario acertó, recibe un punto a la variable 'Puntos' y se imprime la misma, de no ser asi, solo se imprimen los puntos actuales.
         if respuesta ==  resultado:
@@ -136,7 +143,13 @@ def ejercicios_multiplicaciones():
             mathMain
     #Si la cantidad de puntos es menor a 6, le pregunta que tabla de multiplicar es la que más trabajo le cuesta.
     else:
-        ayuda = int(input("Escribe el número de la tabla que más trabajo te cuesta.\n"))
+        while True:
+            try:
+                ayuda = int(input("Escribe el número de la tabla que más trabajo te cuesta.\n"))
+                break
+            except:
+                print("Escribe un número.")
+                print()
         tablas_de_multiplicar(ayuda)
         print("Puedes volver a intentarlo cuantas veces quieras.")
         volver1 = input("Si quieres volver a la pantalla de matemáticas escribe 'Volver', si quieres volver a intentarlo no solo escribe 'No'.\n")
@@ -156,7 +169,13 @@ def multiplicaciones():
     inicio1 = random.randint(0, 10)
     inicio2 = random.randint(0,10)
     while True:
-        iniciador = int(input("Para comenzar, escribe el resultado de {} X {}.\n".format(inicio1, inicio2)))
+        while True:
+            try:
+                iniciador = int(input("Para comenzar, escribe el resultado de {} X {}.\n".format(inicio1, inicio2)))
+                break
+            except:
+                print("¿Tuviste un error de dedo?")
+                print()
         #En caso de acertar, inician los ejercicios.
         if iniciador == (inicio1 * inicio2):
             print()
@@ -171,7 +190,13 @@ def multiplicaciones():
             print()
             #Si responde que si, le pregunta que tabla quiere verificar.
             if ayuda1 == "si":
-                numerodetabla = int(input("Escribe el número de la tabla quieres verificar: "))
+                while True:
+                    try:
+                        numerodetabla = int(input("Escribe el número de la tabla quieres verificar: "))
+                        break
+                    except:
+                        print("Escribe un número.")
+                        print()
                 tablas_de_multiplicar(numerodetabla)
             #Si responde que no, vuelve a intentar responder la multiplicación.
             elif ayuda1 == "no":
