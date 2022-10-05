@@ -1,6 +1,149 @@
 #Importa random para el uso de los números aleatorios para los ejercicos de multiplicaciones
 import random
 
+MEMBERS = [
+    {
+        "name" : "Renato",
+        "last_name" : "Garcia",
+        "matric" : "A01799387",
+        "School" : "Instituto Tecnológico y de Estudios Superiores de Monterrey",
+    },
+    {
+        "name" : "Andrés",
+        "last_name" : "Cabrera",
+        "matric" : "A01798681",
+        "School" : "Instituto Tecnológico y de Estudios Superiores de Monterrey",
+    },
+    {
+        "name" : "José",
+        "last_name" : "Acosta",
+        "matric" : "A01799580",
+        "School" : "Instituto Tecnológico y de Estudios Superiores de Monterrey",
+    },
+]
+
+
+
+
+#****************************************************************************************************************************
+#****************************************************************************************************************************
+#****************************************************************************************************************************
+#______________________________________________________LECTURA_______________________________________________________________
+#_______________________________________________Andrés Cabrera Alvarado______________________________________________________
+#_____________________________________________________A01798681______________________________________________________________
+
+
+def comprehensión_lectura():
+    print("Veamos que tan buena es tu comprehensión lectora.")
+    prim_lect = "Una niña desarrolla una capacidad mental extraordinaria a pesar de sus padres descuidados y de una directora abusiva"
+    print("Primera lectura:\n {prim_lect}" )
+    print("¿Qué le falta a la oración?\n a) punto y coma\n b) punto final y coma\n c) parentesis y coma")
+    a = "punto y coma"
+    b = "punto final y coma"
+    c = "perentesis y coma"
+    elección = input("¿Qué letra escoges?: ")
+    if elección == b:
+        print("Muy bien")
+    else:
+        print("Puedes mejorar, continua")
+    return comprehensión_lectura()
+
+def ejercicio_reescribir():
+    print("Reescribe el siguiente parrafo de la manera correcta")
+    parrafo = print("Don Manuel tenia un campo grande donde habia plantado un monton de arboles, la mayoria de ellos, frutales. Eran arboles hermosos grandes y llenos de las mas ricas frutas. En este campo habia ciruelos, naranjos, limoneros, arboles de mandarinas de higos y hasta nogales que son los arboles que nos dan las nueces.")
+
+    if parrafo == "Don Manuel tenía un campo grande donde había plantado un montón de árboles, la mayoría de ellos, frutales. Eran árboles hermosos, grandes y llenos de las más ricas frutas. En este campo había ciruelos, naranjos, limoneros, árboles de mandarinas, de higos y hasta nogales que son los árboles que nos dan las nueces.":
+        print("Excelente trabajo, sigue así")
+    else:
+        print("Puedes mejorar, no te rindas crack")
+    
+    print("¿Quíeres ayuda?")
+    ayuda = input("Si / No")
+    if ayuda == "Si":
+        print("Recuerda de mantener los acentos, al igual de checar las palabras que necesiten del uso de comas")
+    else:
+        print("Ta bueno")
+
+def ejercio_lectura():
+    print("En este ejercicio tendrás que leer una pequeña lectura y contestar lo siguiente:")
+    print("Gustavo recibió muy contento un sobre. \n-Por su peso, debe ser algo muy bueno, pensó. \nPoco despues empezo su curiosidad por abrir el sobre y revisar su contenido. \n -!Debe ser algún recibo o tal vez una invitación¡ \n -!Deberías abrirlo¡ Le dijo un amigo. \n Gustavo finalmente decidío abrirlo y sorprendido, había encontrado unos boletos que lo invitaban a un estreno de una nueva pelicula, como el ganador de un sorteo.")
+    print("Ahora responde: (Procura contestar con una sola palabra y empezar con mayuscula)")
+    dato_1 = input("¿Quíen es el personaje principal de la historía? \nResponde:")
+    dato_2 = input("¿Qué fue lo que le llego al personaje? \nResponde:")
+    dato_3 = input("¿Cuál era el contenido del sobre? \nResponde:")
+    dato_4 = input("¿Quíen convencio a Gustavo de abrir el sobre? \nResponde:")
+    dato_5 = input("¿Qué notas que le falta al texto?, porfavor separalos con comas \nResponde:")
+
+    if dato_1 == "Gustavo":
+        print("Primera pregunta: !correcto¡")
+    else:
+        print("Vuelve a leer y sigue tratando")
+    
+    if dato_2 == "Sobre":
+        print("Segunda pregunta: !Correcto¡")
+    else:
+        print("Vuelve a leer y sigue tratando")
+    
+    if dato_3 == "Boletos":
+        print("Tercera pregunta: !Correcto¡")
+    else:
+        print("Vuelve a leer y sigue tratando")
+    
+    if dato_4 == "Amigo":
+        print("Cuarta pregunta: !Correcto¡")
+    else:
+        print("Vuelve a leer y sigue tratando")
+    
+    if dato_5 == "Acentos":
+        print("Quinta pregunta: !Correcto¡")
+    else:
+        print("Vuelve a leer y sigue tratando")
+
+
+def lectmain():
+    """
+    Da inicio al menú general de Lectura.
+    """
+    print("Bienvenido a la sección de Lectura")
+    print()
+    print("¿Qué quieres ver?\nEscribe el número corresponiente.\nSi quieres volver a la pantalla de inicio escribe 'Volver'")
+    #Espera recibir el número de acuerdo a la opción que quiera el usuario, en este caso, que tipo de ejercicios quiere resolver.
+    while True:
+        opc = input("\4 1 Ejercicios de lectura\n\4 2 Ejercicios de reescripción\n\4 3 Ejercicios de comprensión\n")
+        if opc == "1":
+            ejercio_lectura()
+            lectmain()
+        elif opc == "2":
+            ejercicio_reescribir()
+            lectmain()
+        elif opc == "3":
+            comprehensión_lectura()
+            lectmain()
+        elif opc == "volver":
+            print()
+            main()
+        else:
+            print()
+            print("Elige una opción válida")
+            continue
+
+
+#****************************************************************************************************************************
+#****************************************************************************************************************************
+#****************************************************************************************************************************
+
+
+
+
+#****************************************************************************************************************************
+#****************************************************************************************************************************
+#****************************************************************************************************************************
+
+#______________________________________________________MATEMATICAS___________________________________________________________
+#__________________________________________________Renato García Morán_______________________________________________________
+#_______________________________________________________A01799387____________________________________________________________
+
+
 
 def propiedades_nr():
     """
@@ -48,9 +191,10 @@ def ejercicios_jerarquia():
     for i in range(10):
         i = random.randint(0, 10)
         x = random.randint(0, 3)
-        Y = random.randint(0, 99)
+        y = random.randint(0, 99)
         z = random.randint(0, 10)
-        resultado = i * x
+        resultado = i * x + y + z * x
+        respuesta = 0
 
 def jerarquia_de_operaciones():
     """
@@ -210,18 +354,17 @@ def mathMain():
     """
     Da inicio al menú general de matemáticas.
     """
-    print("Bienvenido al módulo de matemáticas")
+    print("Bienvenido al la sección de matemáticas")
     print()
     print("¿Qué quieres ver?\nEscribe el número corresponiente.\nSi quieres volver a la pantalla de inicio escribe 'Volver'")
-    opc = 0
     #Espera recibir el número de acuerdo a la opción que quiera el usuario, en este caso, que tipo de ejercicios quiere resolver.
     while True:
-        opc = input("\4 1 Jerarquia de operaciones\n\4 2 Multiplicaciones\n\4 3 Propiedades de los números reales\n")
+        opc = input("\4 1 Multiplicaciones\n\4 2 Jerarquia de operaciones\n\4 3 Propiedades de los números reales\n")
         opc == opc.lower()
         if opc == "1":
-            jerarquia_de_operaciones()
-        elif opc == "2":
             multiplicaciones()
+        elif opc == "2":
+            jerarquia_de_operaciones()
         elif opc == "3":
             propiedades_nReales()
         elif opc == "volver":
@@ -231,6 +374,11 @@ def mathMain():
             print()
             print("Elige una opción válida")
             continue
+
+#****************************************************************************************************************************
+#****************************************************************************************************************************
+#****************************************************************************************************************************
+
 
 
 def main():
@@ -246,15 +394,15 @@ def main():
     print()
     #Ciclo que espera recibir el nombre del integrante o sección para comenzar.
     while True:
-        opcion = input("¿Qué quieres probar?\nEscribe el nombre del integrante o el nombre del módulo\nMatemáticas (Renato)\nCiencias (José)\nLectura (Andrés)\n")
+        opcion = input("¿Qué quieres probar?\nEscribe el nombre del integrante o el nombre del módulo\nMatemáticas (Renato)\nLectura (Andrés)\nCiencias (José)\n")
         opcion = opcion.lower()
         if opcion == "renato" or opcion == "matematicas" or opcion == "matemáticas":
             print()
             mathMain()
-        elif opcion == "josé" or opcion == "jose" or opcion == "ciencias":
-            print()
-            pass
         elif opcion == "andrés" or opcion == "andres" or opcion == "lectura":
+            print()
+            lectmain()
+        elif opcion == "josé" or opcion == "jose" or opcion == "ciencias":
             print()
             pass
         else:

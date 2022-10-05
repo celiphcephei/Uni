@@ -24,6 +24,9 @@ def main():
     back_players = [players["name"] for players in DATA if players["position"] == "Back"]
     for players in back_players:
         print(players)
+    supports = [player["name"] for player in DATA if player["position"] == "Support"]
+    for player in supports:
+        print(player)
 
 
 if __name__ == "__main__":
