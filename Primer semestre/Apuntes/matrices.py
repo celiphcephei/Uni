@@ -20,5 +20,3 @@ def crear_matriz(r, c, v=0):
             m_r.append(v)
         m.append(m_r)
     return m
-
-print(crear_matriz(3,2,1))
