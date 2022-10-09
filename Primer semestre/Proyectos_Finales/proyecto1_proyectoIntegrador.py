@@ -142,44 +142,30 @@ def lectmain():
 #______________________________________________________MATEMATICAS___________________________________________________________
 #__________________________________________________Renato García Morán_______________________________________________________
 #_______________________________________________________A01799387____________________________________________________________
-
-
-
-def propiedades_nr():
+def o():
     """
-    Explica las propiedades de los números reales.
+    ???????
     """
-    propiedades = {
-        "Conmutativa" : "a + b = b + a",
-        "Distributiva" : None,
-        "Asociativa" : None,
-        "Lorem" : None
-    }
-
-
-def propiedades_nReales():
-    """
-    Inicia la sección de preguntas de Propiedades de los números reales.
-    """
-    print("Bienvenido a la sección de Propiedades de los números reales")
-    while True:
-        pass
+    print()
+    print("Aqui no hay absolutamente nada o_o")
+    print()
 
 
 def ayuda_jerarquia():
     """
     Explica la jerarquia de operaciones.
     """
-    print()
-    print("Jerarquía de operaciones.")
-    print("La jerarquía de operaciones es un conjunto de lineamientos por seguir a la hora de realizar operaciones")
-    print("EL orden es el siguiente:")
-    print("Primero se realizan las operaciones dentro de un paréntesis '()'")
-    print("Despues se reañizan los exponentes")
-    print()
-    print()
-    print()
-    print()
+    print("""
+    Jerarquía de operaciones.
+    La jerarquía de operaciones es un conjunto de lineamientos por seguir a la hora de realizar operaciones
+    EL orden es el siguiente:
+    Primero se realizan las operaciones dentro de un paréntesis '()'
+    Despues se realizan los exponentes
+    Despues multiplicaciones y divisiones
+    Finalmente sumas y restas.
+    En caso de haber dos operaciones seguidas con el mismo grado de importancia,
+    el orden es de izquierda a derecha.
+    """)
 
 
 
@@ -195,6 +181,46 @@ def ejercicios_jerarquia():
         z = random.randint(0, 10)
         resultado = i * x + y + z * x
         respuesta = 0
+        print("Cuál es el resultado de")
+        print("{} X {} + {} + {} X {} = ?".format(i, x, y, z, x))
+        while True:
+            try:
+                respuesta = int(input())
+                break
+            except:
+                print("¿Tuviste un error de dedo?\nEsrcibe un número.")
+                print()
+        #Si el usuario acertó, recibe un punto a la variable 'Puntos' y se imprime la misma, de no ser asi, solo se imprimen los puntos actuales.
+        if respuesta ==  resultado:
+            puntos += 1
+        print("Puntuación:",puntos)
+        print()
+    #Nota a corregir después si no se me olvida, mover la opción de vuelta para no repetirlo 3 veces.
+    #Si la cantidad de puntos es de 10, imprime una felicitación y da la opción de volver a intentarlo o salir.
+    if puntos == 10:
+        print("Felicidades, sabes la jerarquia de operaciones")
+        print()
+        volver = input("Si quieres volver a la pantalla de matemáticas escribe 'Volver', si quieres volver a intentarlo no solo escribe 'No'.\n")
+        volver = volver.lower()
+        if volver == "volver":
+            mathMain()
+    #Si la cantidad de puntos es solo mayor a 6, le da una motivación.
+    elif puntos > 6:
+        print("¡Puedes seguir practicando para alcanzar la perfección!")
+        print()
+        volver0 = input("Si quieres volver a la pantalla de matemáticas escribe 'Volver', si quieres volver a intentarlo no solo escribe 'No'.\n")
+        volver0 = volver0.lower()
+        if volver0 == "volver":
+            mathMain()
+    #Si la cantidad de puntos es menor a 6, le despliega la ayuda de jerarquia de operaciones.
+    else:
+        ayuda_jerarquia()
+        print()
+        print("Puedes volver a intentarlo cuantas veces quieras.")
+        volver1 = input("Si quieres volver a la pantalla de matemáticas escribe 'Volver', si quieres volver a intentarlo no solo escribe 'No'.\n")
+        volver1 = volver1.lower()
+        if volver1 == "volver":
+            mathMain()
 
 def jerarquia_de_operaciones():
     """
@@ -209,7 +235,12 @@ def jerarquia_de_operaciones():
     inicio4 = random.randint(0,3)
     resultado = inicio1 + inicio2 * inicio3 * inicio4
     while True:
-        opcion = int(input("Para comenzar di el resultado de {} + {} X {} X {}\n".format(inicio1, inicio2, inicio3, inicio4)))
+        while True:
+            try:
+                opcion = int(input("Para comenzar di el resultado de {} + {} X {} X {}\n".format(inicio1, inicio2, inicio3, inicio4)))
+                break
+            except:
+                print("¿Tuviste un error de dedo?")
         #Si la respuesta es correcta inician las opereaciones.
         if opcion == resultado:
             print()
@@ -284,7 +315,7 @@ def ejercicios_multiplicaciones():
         volver0 = input("Si quieres volver a la pantalla de matemáticas escribe 'Volver', si quieres volver a intentarlo no solo escribe 'No'.\n")
         volver0 = volver0.lower()
         if volver0 == "volver":
-            mathMain
+            mathMain()
     #Si la cantidad de puntos es menor a 6, le pregunta que tabla de multiplicar es la que más trabajo le cuesta.
     else:
         while True:
@@ -359,14 +390,14 @@ def mathMain():
     print("¿Qué quieres ver?\nEscribe el número corresponiente.\nSi quieres volver a la pantalla de inicio escribe 'Volver'")
     #Espera recibir el número de acuerdo a la opción que quiera el usuario, en este caso, que tipo de ejercicios quiere resolver.
     while True:
-        opc = input("\4 1 Multiplicaciones\n\4 2 Jerarquia de operaciones\n\4 3 Propiedades de los números reales\n")
+        opc = input("\4 1 Multiplicaciones\n\4 2 Jerarquia de operaciones\n\4 3 ???\n")
         opc == opc.lower()
         if opc == "1":
             multiplicaciones()
         elif opc == "2":
             jerarquia_de_operaciones()
         elif opc == "3":
-            propiedades_nReales()
+            o()
         elif opc == "volver":
             print()
             main()
