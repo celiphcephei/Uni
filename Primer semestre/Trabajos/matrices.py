@@ -2,6 +2,7 @@ m = [[1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]]
 
+
 def crear_matriz(r, c, v=0):
     m = []
     for i in range(r):
@@ -10,6 +11,7 @@ def crear_matriz(r, c, v=0):
             m_r.append(v)
         m.append(m_r)
     return m
+
 
 def sumar_uno(m):
     renglones = len(m)
@@ -30,6 +32,7 @@ def diagonal(m):
         count += 1
     return r
 
+
 print(diagonal(m))
 
 def suma_total(m):
@@ -40,6 +43,7 @@ def suma_total(m):
         for j in range(columnas):
             total += m[i][j]
     return total
+
 
 def es_cuadrada(m):
     renglones = len(m)

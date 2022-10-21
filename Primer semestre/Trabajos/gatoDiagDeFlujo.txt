@@ -1,0 +1,15 @@
+2jugadores:
+control del turno, simbolo
+
+tablero:
+marcar las casillas, que no se puedan sobreescribir
+Revisar si hay un ganador 
+revisar empate
+mostrar el estado del tablero
+
+start
+mostrar_tablero <--no
+marca_casilla(s)  <revisar_empate>
+<revisar_ganador-->^no
+si
+fin
