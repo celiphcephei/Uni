@@ -1,5 +1,8 @@
 #Importa random para el uso de los números aleatorios para los ejercicos de multiplicaciones
 import random
+import os  # Para limpiar la consola
+
+import urllib.request
 
 MEMBERS = [
     {
@@ -29,8 +32,8 @@ MEMBERS = [
 #****************************************************************************************************************************
 #****************************************************************************************************************************
 #______________________________________________________LECTURA_______________________________________________________________
-#_______________________________________________Andrés Cabrera Alvarado______________________________________________________
-#_____________________________________________________A01798681______________________________________________________________
+#_____________________________________________José María Acosta Heredia______________________________________________________
+#_____________________________________________________A01799580______________________________________________________________
 
 
 def comprehensión_lectura():
@@ -131,13 +134,95 @@ def lectmain():
 #****************************************************************************************************************************
 #****************************************************************************************************************************
 #****************************************************************************************************************************
+#________________________________________________________CIENCIAS____________________________________________________________
+#________________________________________________Andrés Cabrera Alvarado_____________________________________________________
+#_______________________________________________________A01798681____________________________________________________________
+
+# Esto es lo que se conoce como un .tsv, valores separados por tabulaciones y saltos de línea
+textoBaseDePreguntas = ''''''
+renglones = []
+
+try:
+    urlBD = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1HmJ1k1crYRjNcol7IBtvq5Xd-zfMPnpgv0anerwctfA2qNVWMzvSdx5_L4mwO7Njx6oGBixmewRm/pub?output=tsv"
+    HTTP_response=urllib.request.urlopen(urlBD)
+    for line in HTTP_response:
+        renglones.append(line.decode("utf-8").replace("\n","").replace("\r",""))
+except:
+    print("No hay conexión a internet, no se pudo cargar la BD")
+    exit()
+
+n_pregunta = 0
+
+base_de_preguntas = []
+cantidadDePreguntas = len(renglones)
+
+preguntaEscogida = []
+opciones = []
+pregunta = ""
+respuesta = ""
+
+for i in range(cantidadDePreguntas):
+    if(renglones[i] == ""):
+        continue
+    base_de_preguntas.append(renglones[i].split("\t"))
 
 
+def borrarConsola():
+    os.system("cls" if os.name == "nt" else "clear")
+
+
+def escogerPregunta(n):
+    global opciones, respuesta, pregunta
+
+    preguntaEscogida = base_de_preguntas[n]
+    pregunta = preguntaEscogida[0]
+    respuesta = preguntaEscogida[1]
+    opciones = preguntaEscogida[1:]
+    for i in range(4):
+        random.shuffle(opciones)
+    print(opciones)
+    return preguntaEscogida
+
+
+def mostrarPregunta():
+    borrarConsola()
+    print()
+    print(pregunta)
+    print("A)", opciones[0])
+    print("B)", opciones[1])
+    print("C)", opciones[2])
+    print("D)", opciones[3])
+    print()
+
+
+def capturarRespuesta():
+    respuestaUsuario = ""
+    opcionesVálidas = ["a", "b", "c", "d"]
+    while True:
+        respuestaUsuario = input("ingrese su respuesta > ").lower()
+        if not (respuestaUsuario in opcionesVálidas):
+            print("La respuesta no está entre las opciones válidas, vuelva a intentarlo")
+            continue
+        break
+    return opcionesVálidas.index(respuestaUsuario)
+
+
+def jugar():
+    escogerPregunta(n_pregunta)
+    mostrarPregunta()
+    if(opciones[capturarRespuesta()]==respuesta):
+        print("Su respuesta es correcta")
+        input("ENTER PARA CONTINUAR")
+    else:
+        print("Su respuesta NO es correcta, la correcta es: "+ respuesta)
+        input("ENTER PARA CONTINUAR")
 
 
 #****************************************************************************************************************************
 #****************************************************************************************************************************
 #****************************************************************************************************************************
+
+
 
 #______________________________________________________MATEMATICAS___________________________________________________________
 #__________________________________________________Renato García Morán_______________________________________________________
@@ -435,7 +520,8 @@ def main():
             lectmain()
         elif opcion == "josé" or opcion == "jose" or opcion == "ciencias":
             print()
-            pass
+            #No funciona por la variable del cambio de pregunta al entrar a la función main
+            jugar()
         else:
             print()
             print("Elige una opción válida")
