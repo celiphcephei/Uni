@@ -1,0 +1,134 @@
+https://learning.oreilly.com/home/
+biblioteca.tec.mx/oreilly
+github codespaces
+cuenta con el correo de la escuela tec.mx
+username A01799387
+
+github student developer pack
+https://education.github.com/pack
+
+https://github.com/GruposTEC/AD22TC1033-301
+
+pwd ver posicion
+ls / dir(windows) ver contenidos
+mkdir (nombre) crea directorio
+cd (nombre) entra a directorio
+cd .. / cd.. (windows) salir del directorio
+
+g++ -o myapp main.cpp compilar archivo
+
+cp ../Makefile .   copiar 
+make compila el archivo
+
+./(nombre en el make file) corre el archivo
+
+make clean borrar todo
+
+
+&& and
+|| or
+
+
+std::cout <<
+
+En terminal escribimos
+ls (listar los archivos, que hay en ese directorio)
+make (compila todos los archivos y une en un ejecutable myapp)
+./myapp (corre el archivo)
+
+ + stage changes
+commit and push
+
+
+int x;
+float y;
+char z;
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    int data = 42;
+    float fl = 38.42;
+    char ch = 'y';
+    string st = "Hola";
+    cout << data << endl;
+    cout << fl << endl;
+    cout << ch << endl;
+    cout << st << endl
+    return 0;
+}
+
+
+the modifiers 
+
+signed		Antes de int y char
+unsigned	
+long
+short
+
+double		para float. se puede usar tambien long double
+		no se puede usar double float
+
+
+    unsigned int a;
+    short int b;
+
+
+ejemplo
+double float variable;
+está mal
+
+puedes escribir double o long double
+ejemplo
+double variable;
+long double variable;
+está bien
+
+
+if
+#include <iostream>
+using namespace std;
+int main(){
+    int first, second;
+    cout << "Escribe dos numeros";
+    cin >> first >> second;
+    
+    if (first > second){
+        cout << "First number is grater which is =" <<  first << endl;
+    }
+    return 0;
+}
+
+the syntax for if statement is
+if (condition)
+{
+code to execute when condition satisfies
+}
+
+
+while / do while / for
+
+syntax
+while (condition)
+{
+
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 0;
+    while (a < 5){
+        cout << "Hello" << endl;
+        a++;
+    }
+    return 0;
+}
+
+
+for
+
+for (int i=0; i<5; i++){
+    cout << i << endl;
+}
