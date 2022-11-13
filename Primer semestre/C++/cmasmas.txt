@@ -279,3 +279,66 @@ vector<float>miVector;
 #include <string>
 using std::string;
 
+
+PROGRAMACION ORIENTEADA A OBJETOS
+Lenguas procedurales, todo en un solo archivo
+Vamos a usar archivos independientes trabajando de forma independiente
+para un solo proyecto; 
+clase, idea descripcion, definicion,clases que representan restaurante, usuario...
+cosas invisibles
+clases descrinem PROPIEDADES atributos(nombre, altura, edad  geneto) y METODOS acciones<lo que puedes
+hacer> (caminar, correr...)
+clase, la idea
+
+encapsulacion meter metodos y propiedades
+
+3 etapas de contruccion de objetos
+analisis: abstraccion, identificar que es lo que vas a hacer
+diseño: como lo vas a hacer
+programación (convertir diseño a programa funcional): de un diseño completo, interpretas y programas
+
+
+abstraccion
+encapsulacion
+{herencia
+polimorfismo} se ven después
+
+objeto, es una cosa del mundo real, carro, barco, libro, // cuenta de banco,
+cosa que quieres comprar...
+tienen un estado, comportamiento e identidad propia, diferente
+
+
+ABSTRACCION: sacar caracteristicas esenciales de los objetos
+que estas viendo, analisis
+Simplificar la realidad, 
+persona nombre:Kevin genero:hombre...
+para crearlos necesitas una clase con atributos que describen al objeto
+propiedades
+nombre, apellido, genero, ocupacion
+de un objeto se pueden crear varios objetos de la misma clase, cambiando sus
+propiedades para ser diferentes
+
+ENCAPSULACION:
+Metodos para interactuar con un objeto pero no sabemos como funciona,
+pregunta - respuesta,
+acceso publico, a la vista
+privado, pregunta lo que quieres saber
+protegido...
+
+
+tilde protegido, mas publico, menos privado, gato paquete.
+
+PONG
+Clases 
+barras (propiedades	PRIVADOS -dimension: int, -color: int, -x: int, -y:int //Metods		+mover(parametro:int):int , +getter, +setters PUBLICOS)
+pelota (			 -dim, -color,-x , -y)
+escenario(			 -dimension, -color, -barra1:Barra(es de tipo barra, creaste tu propio tipo de dato, ya no es str, int...), -barra2:Barra, -pelota, -marcador) tiene un tipo de liga entre las clases
+
+asociacion: usa -----
+agregacion y composicion: tiene
+agregacion: si los objetos son independientes o dependientes, un coche tiene llantas, si le quita las llantas, las llantas siguen siendo llantas? si, agregacion, ---rombo vacio
+composicion: una persona le quita el corazon, no vive, composicion, rombo ----negro
+
+pong & object oriented programming
+
+archivo.drawio

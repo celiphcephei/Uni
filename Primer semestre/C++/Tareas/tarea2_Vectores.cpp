@@ -27,7 +27,7 @@ void calcula(vector<int>&vect, int tam){
     }
     cout << "El numero mas chico es: " << menor << endl;
     
-    int suma;
+    int suma = 0;
     for(int k=0;k<tam; k++){
         suma += vect[k];
     }
