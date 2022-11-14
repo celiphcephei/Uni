@@ -20,7 +20,7 @@ int x = 5;
 float y = 10.54;
 float z = 0;
 
-float &ref = y //declaro referencia
+float &ref = y; //declaro referencia
 
 float *ap = &y; //declaro apuntador
 

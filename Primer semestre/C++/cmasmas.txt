@@ -9,6 +9,10 @@ https://education.github.com/pack
 
 https://github.com/GruposTEC/AD22TC1033-301
 
+
+Live share
+
+
 pwd ver posicion
 ls / dir(windows) ver contenidos
 mkdir (nombre) crea directorio
@@ -342,3 +346,22 @@ composicion: una persona le quita el corazon, no vive, composicion, rombo ----ne
 pong & object oriented programming
 
 archivo.drawio
+
+
+
+
+
+PROYECTO 
+Dado, Tablero, Jugadores, Escalera, Serpientes, Casillas
+
+
+Jugadores
+-color: string
+-pos: int
+-id: string
++getColor():string
++getPos():int
++getId():string
++setColor(string):void
++setPos(int):void
++setId(string):void
