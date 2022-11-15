@@ -1,6 +1,7 @@
 #ifndef RECTANGULO_H
 #define RECTANGULO_H
 
+
 class Rectangulo{
     private:
         int ancho;

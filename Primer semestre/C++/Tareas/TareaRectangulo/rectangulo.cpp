@@ -1,8 +1,10 @@
 #include <iostream>
 #include "rectangulo.h"
 
+
 using std::cout;
 using std::endl;
+
 
 int Rectangulo::getAncho(){
     return alto;
