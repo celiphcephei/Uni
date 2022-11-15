@@ -7,11 +7,11 @@ using std::endl;
 
 
 int Rectangulo::getAncho(){
-    return alto;
+    return ancho;
 }
 
 int Rectangulo::getAlto(){
-    return ancho;
+    return alto;
 }
 
 void Rectangulo::setAlto(int altura){
