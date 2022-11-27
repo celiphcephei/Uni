@@ -2,6 +2,7 @@
 #include "dado.h"
 #include "jugadores.h"
 #include "casilla.h"
+#include "tablero.h"
 
 using std::cout;
 using std::cin;
@@ -23,4 +24,7 @@ int main(){
     c1.setpos(10);
     c1.setcambiopos(5);
     cout << c1.mover() << endl;
+
+    Tablero tab;
+    tab.toString();
 }

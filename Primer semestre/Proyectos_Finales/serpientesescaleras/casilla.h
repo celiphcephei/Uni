@@ -9,9 +9,13 @@ class Casilla
     public:
         int mover();
         int getpos();
-        void setpos(int p);
         int getcambiopos();
+        void setpos(int p);
         void setcambiopos(int cp);
+        Casilla(int p, int c);
+        Casilla(); //Sobre carga, 
+        ~Casilla();
+        void toString();
 };
 
 #endif

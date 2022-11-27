@@ -365,3 +365,38 @@ Jugadores
 +setColor(string):void
 +setPos(int):void
 +setId(string):void
+
+
+
+
+#include <iostream>
+2	
+3	using std::cout;
+4	using std::cin;
+5	using std::endl;
+6	
+7	void metodo(){
+8	  int *ap;
+9	  ap = new int[6];
+10	  
+11	  ap[5] = 5; //No se borra esta memoria usada si termina el metodo
+12	  delete []ap;
+13	  cout << "Antes de finalizar el metodo";
+14	}
+15	
+16	int main() {
+17	  int arr[] = {0,1,2,3};
+18	  int num;
+19	  
+20	  cout << "Dame el tamaño del arreglo: " ;
+21	  num = 5;
+22	  
+23	  int *ap;
+24	  
+25	  ap = new int[num];
+26	  
+27	  return 0;
+28	}
+
+
+PanBimbo * next = NULL; 
