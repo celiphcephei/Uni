@@ -38,7 +38,7 @@ int main(){
             producto2.setDescripcion(descripcion);
             producto2.setPrecio(precio1);
             producto2.setStock(stock1);
-        } else if ( i == 2){
+        } else if (i == 2){
             producto3.setId(id);
             producto3.setDescripcion(descripcion);
             producto3.setPrecio(precio1);
@@ -48,5 +48,11 @@ int main(){
     cout << producto1.getId() << endl;
     cout << producto2.getId() << endl;
     cout << producto3.getId() << endl;
+
+    Inventario inventariobase;
+    inventariobase.setProducto(producto1);
+    inventariobase.setProducto(producto2);
+    inventariobase.setProducto(producto2);
+    
     return 0;
 }
