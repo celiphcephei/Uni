@@ -1,7 +1,6 @@
 #ifndef PRODUCTOS_H
 #define PRODUCTOS_H
 
-#include "productos.h"
 #include <string>
 
 using std::string;

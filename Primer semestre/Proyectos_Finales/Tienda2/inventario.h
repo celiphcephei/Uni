@@ -12,6 +12,7 @@ class Inventario{
     public:
         void mostrarProductos();
         void crearInventario(Productos producto);
+        string verInventario(int num);
 };
 
 #endif

@@ -4,6 +4,8 @@
 #include "tienda.h"
 #include "carrito.h"
 
+//No me dio la capacidad d abstraccion:(
+    
 int main(){
     Productos producto1("ID0001", "Agua Embotellada", 15.54, 25);
     Productos producto2("ID0002","Bote de Palomitas", 25.65, 125);

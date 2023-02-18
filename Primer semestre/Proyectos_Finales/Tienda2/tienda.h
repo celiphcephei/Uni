@@ -7,13 +7,15 @@
 class Tienda{
     private:
         Inventario inventario;
+        Carrito carrito;
         int opcion;
     public:
         Tienda();
         Tienda(Inventario inv);
         void menuPrincipal();
         void seleccionarProducto();
-        
+        void verCarrito();
+
 };
 
 #endif

@@ -41,11 +41,11 @@ void Tienda::seleccionarProducto(){
         if( prod == -1 || cant == -1){
             menuPrincipal();
         } else if(prod == 0){
-            cout << "o";
+            inventario.verInventario(0);
         } else if(prod == 1){
-            cout <<"o";
+            inventario.verInventario(1);
         } else if(prod == 2){
-            cout << "o";
+            inventario.verInventario(2);
         }
     }
 }
