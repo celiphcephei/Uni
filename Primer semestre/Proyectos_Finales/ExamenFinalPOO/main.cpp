@@ -6,7 +6,7 @@
 using std::cout;
 using std::cin;
 using std::endl;
-
+    
 int main(){
     Navio barquito("barquito", "QWERTY", 100);
     Navio barquito2("barquito2", "QWKNVG", 200);
