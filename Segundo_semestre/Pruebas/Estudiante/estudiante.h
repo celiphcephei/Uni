@@ -19,6 +19,11 @@ class Estudiante{
         Estudiante(string n, int e, float p);
         ~Estudiante();
         void setNombre(string n);
+        void setEdad(int e);
+        void setPromedio(float p);
+        string getNombre();
+        int getEdad();
+        float getPromedio();
 };
 
 #endif
