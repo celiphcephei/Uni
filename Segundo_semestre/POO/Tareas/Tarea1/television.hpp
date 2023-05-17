@@ -17,6 +17,10 @@ class Television{
         int getPrecio();
         void setModelo(string mod);
         string getModelo();
+        void setCantidad(int cant);
+        int getCantidad();
+        void sumarCantidad();
+        void restarCantidad();
 };
 
 #endif

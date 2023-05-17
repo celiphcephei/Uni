@@ -8,3 +8,9 @@ int Television::getPrecio(){return precio;}
 
 void Television::setModelo(string mod){modelo = mod;}
 string Television::getModelo(){return modelo;}
+
+void Television::setCantidad(int cant){cantidad = cant;}
+int Television::getCantidad(){return cantidad;}
+
+void Television::sumarCantidad(){cantidad++;}
+void Television::restarCantidad(){cantidad--;}
