@@ -5,8 +5,6 @@
 #include "tienda.hpp"
 #include "domicilio.hpp"
 
-using std::cout;
-
 int main(){
     Tarjeta tarjeta1(500);
     Television tvs(500,"Elyi",2);
