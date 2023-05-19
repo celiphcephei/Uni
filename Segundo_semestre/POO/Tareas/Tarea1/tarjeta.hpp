@@ -3,14 +3,13 @@
 
 class Tarjeta{
     private:
-        int saldo;
+        int cargo;
     public:
     Tarjeta();
-    Tarjeta(int sald);
-    void setSaldo(int sald);
-    int getSaldo();
-    void agregarFondos(int dinero);
-    void restarFondos(int dinero);
+    Tarjeta(int car);
+    void sumarCargo(int car);
+    void setCargo(int car);
+    int getCargo();
 };
 
 #endif

@@ -1,10 +1,8 @@
 #include "tarjeta.hpp"
+Tarjeta::Tarjeta(): cargo{0} {}
+Tarjeta::Tarjeta(int car = 0): cargo{car} {}
 
-Tarjeta::Tarjeta(): saldo{0} {}
-Tarjeta::Tarjeta(int sald): saldo{sald} {}
+void Tarjeta::sumarCargo(int car){cargo+=car;}
 
-void Tarjeta::setSaldo(int sald){saldo = sald;}
-int Tarjeta::getSaldo(){return saldo;}
-
-void Tarjeta::agregarFondos(int dinero){saldo += dinero;}
-void Tarjeta::restarFondos(int dinero){saldo -= dinero;}
+void Tarjeta::setCargo(int car){cargo = car;}
+int Tarjeta::getCargo(){return cargo;}

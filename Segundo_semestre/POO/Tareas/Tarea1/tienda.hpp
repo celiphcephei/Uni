@@ -13,6 +13,7 @@ class Tienda{
     private:
         string nombre;
         Television televisores;
+        int ventas;
     public:
         Tienda();
         Tienda(string nom, Television tv);
@@ -20,6 +21,7 @@ class Tienda{
         string getNombre();
         int getStock();
         void venderTelevision();
+        int getVentas();
 };
 
 #endif

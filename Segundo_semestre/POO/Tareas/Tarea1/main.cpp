@@ -12,5 +12,8 @@ int main(){
     Tienda guolmar("Guolmar", tvs);
     juanito.comprarTelevision();
     guolmar.venderTelevision();
+    Domicilio casaDelJuan(tvs, juanito, guolmar);
+    casaDelJuan.recibirTelevision();
+    casaDelJuan.dispTelevisores();
     return 0;
 }

@@ -21,6 +21,8 @@ class Persona{
         void setNombre(string nom);
         string getNombre();
         void comprarTelevision();
+        int getSaldo();
+        void recargarSaldo(int dinero);
 };
 
 #endif
