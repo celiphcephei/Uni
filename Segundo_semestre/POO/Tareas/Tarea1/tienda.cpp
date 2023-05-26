@@ -1,3 +1,7 @@
+// Tarea 1
+// Renato Garcia Moran A01799387
+// Jose Eduardo Rosas Ponciano A01784461
+
 #include "tienda.hpp"
 
 Tienda::Tienda(): nombre{""}, televisores{}, ventas{0} {}

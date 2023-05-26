@@ -1,3 +1,7 @@
+// Tarea 1
+// Renato Garcia Moran A01799387
+// Jose Eduardo Rosas Ponciano A01784461
+
 #include "television.hpp"
 
 Television::Television(): precio{0}, modelo{""}, cantidad{0} {}

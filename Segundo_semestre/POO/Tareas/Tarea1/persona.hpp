@@ -1,3 +1,7 @@
+// Tarea 1
+// Renato Garcia Moran A01799387
+// Jose Eduardo Rosas Ponciano A01784461
+
 #ifndef PERSONA_H
 #define PERSONA_H
 
@@ -21,8 +25,7 @@ class Persona{
         void setNombre(string nom);
         string getNombre();
         void comprarTelevision();
-        int getSaldo();
-        void recargarSaldo(int dinero);
+        void dispDeuda();
 };
 
 #endif

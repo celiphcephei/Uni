@@ -1,3 +1,7 @@
+// Tarea 1
+// Renato Garcia Moran A01799387
+// Jose Eduardo Rosas Ponciano A01784461
+
 #include "domicilio.hpp"
 
 Domicilio::Domicilio(): television{}, dueño{}, vendedor{} {}
