@@ -4,6 +4,7 @@
 class Tarjeta{
     int cargo = 0;
     public:
+        Tarjeta();
         Tarjeta(int);
         void setCargo(int);
         void sumarCargo(int);
