@@ -14,6 +14,7 @@
 #include "Television.hpp"
 #include "Curva.hpp"
 #include "Inteligente.hpp"
+#include "TresDimensiones.hpp"
 
 using std::cout;
 using std::endl;
@@ -53,7 +54,64 @@ int main(){
     tiendita.aumentarStock(tvPtr);
     tiendita.venderTelevision();
     cout << endl;
+    
 
+
+
+
+    // Tarea 2
+    cout << "***** TAREA 2 ****" << endl;
+    Tarjeta bisa{0};
+    Domicilio mansionpepe{};
+    Cliente pepito{"Pepito", 10, bisa, mansionpepe};
+    Tienda kosko{"Kosko", pepito};
+    Tienda chedrawi{"Chedrawi", pepito};
+    Tienda zorriana{"Zorriana", pepito};
+    Curva teleCurva{"Sansu", "Curvo", 873};
+    TresDimensiones tele3D{"Elyi", "3D", 4938};
+    Inteligente teleInteligente{"zonik", "Inteligente", 7364};
+    Tienda* tiendaPtr = nullptr;
+    Television* televisionesPtr = nullptr;
+    
+    tiendaPtr = &kosko;
+    televisionesPtr = &teleCurva;
+    tiendaPtr->aumentarStock(televisionesPtr);
+    tiendaPtr->venderTelevision();
+    cout << endl;
+    televisionesPtr->prender();
+    televisionesPtr->subirVolumen(); televisionesPtr->subirVolumen();
+    televisionesPtr->bajarVolumen();
+    televisionesPtr->selectCanal("Canal 5");
+    cout << televisionesPtr->toString() << endl;
+    
+    cout << endl;
+
+    tiendaPtr = &chedrawi;
+    televisionesPtr = &tele3D;
+    tiendaPtr->aumentarStock(televisionesPtr);
+    tiendaPtr->venderTelevision();
+    cout << endl;
+    televisionesPtr->prender();
+    televisionesPtr->subirVolumen(); televisionesPtr->subirVolumen();
+    televisionesPtr->bajarVolumen();
+    televisionesPtr->selectCanal("Avatar 10");
+    cout << televisionesPtr->toString() << endl;
+
+    cout << endl;
+
+    tiendaPtr = &zorriana;
+    televisionesPtr = &teleInteligente;
+    tiendaPtr->aumentarStock(televisionesPtr);
+    tiendaPtr->venderTelevision();
+    cout << endl;
+    televisionesPtr->prender();
+    televisionesPtr->subirVolumen(); televisionesPtr->subirVolumen();
+    televisionesPtr->bajarVolumen();
+    televisionesPtr->selectCanal("Netlfix");
+    cout << televisionesPtr->toString() << endl;
+
+
+    cout << endl;
     // PRUEBAS DE DERIVADAS DE TELEVISION
     cout << "***** Pruebas de derivadas de televisores: " << endl;
     Inteligente tvInteligente{"Sansu", "Inteligente", 700};
@@ -70,13 +128,21 @@ int main(){
     tvCurva2.selectCanal("Canal 5");
     cout << tvCurva2.toString() << endl << endl;
 
+    TresDimensiones tvtresde{"Patito","3D", 900};
+    tvCurva2.prender();
+    tvCurva2.subirVolumen();
+    tvCurva2.subirVolumen();
+    tvCurva2.selectCanal("Avatar 9");
+    cout << tvCurva2.toString() << endl << endl;
+
     cout << "***** Prueba con polimorfismo: " << endl;
     Television* televisionPtr = nullptr;
-    Television* televisiones[2];
+    Television* televisiones[3];
     televisiones[0] = new Curva{"elPanaSonic", "Curvo", 500};
-    televisiones[1] = new Inteligente{"marcaChina", "Inteligente", 700};
+    televisiones[1] = new Inteligente{"China", "Inteligente", 700};
+    televisiones[2] = new TresDimensiones{"CocaCola", "3D", 900};
     
-    for(int i = 0; i < 2; i++){
+    for(int i = 0; i < 3; i++){
         televisionPtr = televisiones[i];
         televisionPtr->prender();
         televisionPtr->subirVolumen();
@@ -86,6 +152,5 @@ int main(){
         televisionPtr->bajarVolumen();
         cout << televisionPtr->toString() << endl << endl;
     }
-
     return 0;
 }
