@@ -11,7 +11,13 @@ class TresDimensiones: public Television{
             TresDimensiones();
             TresDimensiones(string, string, int);
             bool tresDimOn();
-            string toString();
+            virtual string toString();
+            virtual void prender();
+            virtual void apagar();
+            virtual void subirVolumen();
+            virtual void bajarVolumen();
+            virtual void seleccion(int);
+            virtual void funcionEspecial();
 };
 
 #endif

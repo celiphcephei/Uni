@@ -20,59 +20,35 @@ using std::cout;
 using std::endl;
 
 int main(){
-    // Tarea 2
-    cout << "***** TAREA 2 ****" << endl;
-    Tarjeta bisa{0};
-    Domicilio mansionpepe{};
-    Cliente pepito{"Pepito", 10, bisa, mansionpepe};
-    Tienda kosko{"Kosko", pepito};
-    Tienda chedrawi{"Chedrawi", pepito};
-    Tienda zorriana{"Zorriana", pepito};
-    Curva teleCurva{"Sansu", "Curvo", 873};
-    TresDimensiones tele3D{"Elyi", "3D", 4938};
-    Inteligente teleInteligente{"zonik", "Inteligente", 7364};
-    Tienda* tiendaPtr = nullptr;
-    Television* televisionesPtr = nullptr;
+    Television* misTelevisores[5];
+    misTelevisores[0] = new Curva{"Sansu", "Curvo", 500};
+    misTelevisores[1] = new TresDimensiones{"Elyi", "3D", 600};
+    misTelevisores[2] = new Inteligente{"Sonik", "Inteligente", 1000};
+    misTelevisores[3] = new Curva{"Elyi", "Curvo", 500};
+    misTelevisores[4] = new Inteligente{"Sansu", "Inteligente", 1300};
 
-    tiendaPtr = &kosko;
-    televisionesPtr = &teleCurva;
-    tiendaPtr->aumentarStock(televisionesPtr);
-    tiendaPtr->venderTelevision();
-    cout << endl;
-    televisionesPtr->prender();
-    televisionesPtr->subirVolumen(); televisionesPtr->subirVolumen();
-    televisionesPtr->bajarVolumen();
-    televisionesPtr->selectCanal("Canal 5");
-    cout << televisionesPtr->toString() << endl;
-    
-    cout << endl;
+    Television* teleActual;
 
-    tiendaPtr = &chedrawi;
-    televisionesPtr = &tele3D;
-    tiendaPtr->aumentarStock(televisionesPtr);
-    tiendaPtr->venderTelevision();
-    cout << endl;
-    televisionesPtr->prender();
-    televisionesPtr->subirVolumen(); televisionesPtr->subirVolumen();
-    televisionesPtr->bajarVolumen();
-    televisionesPtr->selectCanal("Avatar 10");
-    cout << televisionesPtr->toString() << endl;
-
-    cout << endl;
-
-    tiendaPtr = &zorriana;
-    televisionesPtr = &teleInteligente;
-    tiendaPtr->aumentarStock(televisionesPtr);
-    tiendaPtr->venderTelevision();
-    cout << endl;
-    televisionesPtr->prender();
-    televisionesPtr->subirVolumen(); televisionesPtr->subirVolumen();
-    televisionesPtr->bajarVolumen();
-    televisionesPtr->selectCanal("Netlfix");
-    cout << televisionesPtr->toString() << endl;
-
-    cout << endl;
-
+    for(int i = 0; i < 5; i++){
+        cout << endl << endl;
+        teleActual = misTelevisores[i];
+        teleActual->prender();
+        cout << endl;
+        teleActual->apagar();
+        cout << endl;
+        teleActual->subirVolumen();
+        cout << endl;
+        teleActual->subirVolumen();
+        cout << endl;
+        teleActual->bajarVolumen();
+        cout << endl;
+        teleActual->funcionEspecial();
+        cout << endl;
+        teleActual->seleccion(3);
+        cout << endl;
+        cout << teleActual->toString() << endl;
+        cout << endl << endl;
+    }
     return 0;
 }
     /*Domicilio casita{};
@@ -150,3 +126,58 @@ int main(){
         televisionPtr->bajarVolumen();
         cout << televisionPtr->toString() << endl << endl;
     }*/
+
+
+
+    // // Tarea 2
+    // cout << "***** TAREA 2 ****" << endl;
+    // Tarjeta bisa{0};
+    // Domicilio mansionpepe{};
+    // Cliente pepito{"Pepito", 10, bisa, mansionpepe};
+    // Tienda kosko{"Kosko", pepito};
+    // Tienda chedrawi{"Chedrawi", pepito};
+    // Tienda zorriana{"Zorriana", pepito};
+    // Curva teleCurva{"Sansu", "Curvo", 873};
+    // TresDimensiones tele3D{"Elyi", "3D", 4938};
+    // Inteligente teleInteligente{"zonik", "Inteligente", 7364};
+    // Tienda* tiendaPtr = nullptr;
+    // Television* televisionesPtr = nullptr;
+
+    // tiendaPtr = &kosko;
+    // televisionesPtr = &teleCurva;
+    // tiendaPtr->aumentarStock(televisionesPtr);
+    // tiendaPtr->venderTelevision();
+    // cout << endl;
+    // televisionesPtr->prender();
+    // televisionesPtr->subirVolumen(); televisionesPtr->subirVolumen();
+    // televisionesPtr->bajarVolumen();
+    // televisionesPtr->selectCanal("Canal 5");
+    // cout << televisionesPtr->toString() << endl;
+    
+    // cout << endl;
+
+    // tiendaPtr = &chedrawi;
+    // televisionesPtr = &tele3D;
+    // tiendaPtr->aumentarStock(televisionesPtr);
+    // tiendaPtr->venderTelevision();
+    // cout << endl;
+    // televisionesPtr->prender();
+    // televisionesPtr->subirVolumen(); televisionesPtr->subirVolumen();
+    // televisionesPtr->bajarVolumen();
+    // televisionesPtr->selectCanal("Avatar 10");
+    // cout << televisionesPtr->toString() << endl;
+
+    // cout << endl;
+
+    // tiendaPtr = &zorriana;
+    // televisionesPtr = &teleInteligente;
+    // tiendaPtr->aumentarStock(televisionesPtr);
+    // tiendaPtr->venderTelevision();
+    // cout << endl;
+    // televisionesPtr->prender();
+    // televisionesPtr->subirVolumen(); televisionesPtr->subirVolumen();
+    // televisionesPtr->bajarVolumen();
+    // televisionesPtr->selectCanal("Netlfix");
+    // cout << televisionesPtr->toString() << endl;
+
+    // cout << endl;

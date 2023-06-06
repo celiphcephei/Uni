@@ -6,6 +6,8 @@
 #include <iostream>
 #include <string>
 
+using std::cout;
+using std::endl;
 using std::string;
 
 class Television{
@@ -27,14 +29,18 @@ class Television{
         bool isEncendido();
         void setPrecio(int);
         int getPrecio();
-        void prender();
-        void apagar();
-        void subirVolumen();
-        void bajarVolumen();
+        void masVolumen(int);
+        void menosVolumen(int);
+        virtual void prender() = 0;
+        virtual void apagar() = 0;
+        virtual void subirVolumen() = 0;
+        virtual void bajarVolumen() = 0;
         int getVolumen();
-        void selectCanal(string);
+        virtual void seleccion(int) = 0;
+        void setCanal(string);
         string getCanal();
         virtual string toString() = 0;
+        virtual void funcionEspecial() = 0;
 };
 
 #endif

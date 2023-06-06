@@ -12,6 +12,12 @@ class Inteligente: public Television{
         Inteligente(string, string, int);
         bool hasWifi();
         virtual string toString();
+        virtual void prender();
+        virtual void apagar();
+        virtual void subirVolumen();
+        virtual void bajarVolumen();
+        virtual void seleccion(int);
+        virtual void funcionEspecial();
 };
 
 #endif

@@ -12,6 +12,12 @@ class Curva: public Television{
             Curva(string, string, int);
             bool hasCurvature();
             virtual string toString();
+            virtual void prender();
+            virtual void apagar();
+            virtual void subirVolumen();
+            virtual void bajarVolumen();
+            virtual void seleccion(int);
+            virtual void funcionEspecial();
 };
 
 #endif

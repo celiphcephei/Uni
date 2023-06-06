@@ -17,12 +17,16 @@ bool Television::isEncendido(){return encendido;}
 void Television::setPrecio(int prec){precio = prec;}
 int Television::getPrecio(){return precio;}
 
-void Television::prender(){setEncendido(1);}
-void Television::apagar(){setEncendido(0);}
+void Television::masVolumen(int vol){volumen += vol;}
+void Television::menosVolumen(int vol){volumen -= vol;}
 
-void Television::subirVolumen(){volumen += 10;}
-void Television::bajarVolumen(){volumen -= 10;}
+// void Television::prender(){setEncendido(1);}
+// void Television::apagar(){setEncendido(0);}
+
+// void Television::subirVolumen(){volumen += 10;}
+// void Television::bajarVolumen(){volumen -= 10;}
 int Television::getVolumen(){return volumen;}
 
-void Television::selectCanal(string can){canal = can;}
+//void Television::selecion(string can){canal = can;}
 string Television::getCanal(){return canal;}
+void Television::setCanal(string can){canal = can;}
