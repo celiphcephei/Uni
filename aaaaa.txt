@@ -1,0 +1,5 @@
+string operator +(Television &t1, Television &t2){
+    return "Recibo electronico\nTelevisor: " + t1.getModelo() + "\nMarca: " + t1.getMarca() + "\nPrecio: " + std::to_string(t1.getPrecio()) +
+    "\n\nTelevisor: " + t2.getModelo() + "\nMarca: " + t2.getMarca() + "\nPrecio: " + std::to_string(t2.getPrecio()) +
+    "\n\nTOTAL: " + std::to_string(t1.getPrecio() + t2.getPrecio());
+}
