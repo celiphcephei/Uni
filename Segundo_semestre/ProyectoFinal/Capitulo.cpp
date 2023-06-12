@@ -1,3 +1,5 @@
+// Garcia Moran Renato A01799387
+// Jose Eduardo Rosas Ponciano A01784461
 #include "Capitulo.hpp"
 
 Capitulo::Capitulo(): numero{0}, titulo{""}, calificacion{0} {}

@@ -1,3 +1,5 @@
+// Garcia Moran Renato A01799387
+// Jose Eduardo Rosas Ponciano A01784461
 #include "Video.hpp"
 
 Video::Video(): id{0}, nombre{""}, duracion{0.0f}, genero{""}, reproduciendo{false}{}

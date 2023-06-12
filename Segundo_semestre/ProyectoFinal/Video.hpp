@@ -1,3 +1,5 @@
+// Garcia Moran Renato A01799387
+// Jose Eduardo Rosas Ponciano A01784461
 #ifndef VIDEO_HPP
 #define VIDEO_HPP
 

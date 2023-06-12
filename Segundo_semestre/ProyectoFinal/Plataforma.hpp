@@ -1,3 +1,5 @@
+// Garcia Moran Renato A01799387
+// Jose Eduardo Rosas Ponciano A01784461
 #ifndef PLATAFORMA_HPP
 #define PLATAFORMA_HPP
 

@@ -1,3 +1,5 @@
+// Garcia Moran Renato A01799387
+// Jose Eduardo Rosas Ponciano A01784461
 #ifndef PELICULA_HPP
 #define PELICULA_HPP
 
