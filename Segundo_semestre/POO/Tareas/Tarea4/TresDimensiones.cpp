@@ -3,7 +3,7 @@
 #include "TresDimensiones.hpp"
 
 TresDimensiones::TresDimensiones(): Television{}, tresDim{1} {}
-TresDimensiones::TresDimensiones(string marc, string model, int prec): Television{marc, model, prec}, tresDim{1} {}
+TresDimensiones::TresDimensiones(string marc, string model, int prec, float pes): Television{marc, model, prec, pes}, tresDim{1} {}
 
 bool TresDimensiones::tresDimOn(){return tresDim;}
 

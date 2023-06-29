@@ -21,7 +21,7 @@ using std::endl;
 
 int main(){
     Curva teleCurva{"Sansu", "Curvo", 500, 67.2};
-    TresDimensiones tele3D{"Elyi", "3D", 600};
+    TresDimensiones tele3D{"Elyi", "3D", 600, 50.3};
     Tarjeta tarjetita{0};
     Domicilio mansionPepe{};
     Cliente pepito{"Pepito", 10, tarjetita, mansionPepe};

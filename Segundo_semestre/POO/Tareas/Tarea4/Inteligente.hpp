@@ -9,7 +9,7 @@ class Inteligente: public Television{
     bool wifi;
     public:
         Inteligente();
-        Inteligente(string, string, int);
+        Inteligente(string, string, int, float);
         bool hasWifi();
         virtual string toString();
         virtual void prender();

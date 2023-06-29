@@ -69,6 +69,8 @@ int main(){
     yutubChafa.addSeries(seriePtr);
 
 
+
+    
     yutubChafa.menuPrincipal();
     return 0;
 }

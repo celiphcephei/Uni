@@ -9,7 +9,7 @@ class TresDimensiones: public Television{
     bool tresDim;
         public:
             TresDimensiones();
-            TresDimensiones(string, string, int);
+            TresDimensiones(string, string, int, float);
             bool tresDimOn();
             virtual string toString();
             virtual void prender();

@@ -3,7 +3,7 @@
 #include "Inteligente.hpp"
 
 Inteligente::Inteligente(): Television{}, wifi{} {}
-Inteligente::Inteligente(string marc, string model, int prec): Television{marc, model, prec}, wifi{1} {}
+Inteligente::Inteligente(string marc, string model, int prec, float pes): Television{marc, model, prec, pes}, wifi{1} {}
 
 bool Inteligente::hasWifi(){return wifi;}
 

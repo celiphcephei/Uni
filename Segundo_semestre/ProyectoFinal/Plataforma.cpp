@@ -31,6 +31,7 @@ void Plataforma::menuPrincipal(){
             break;
         case 0:
             return;
+            break;
         default:
             cout << "Solo puedes elegir opciones del 0 al 4" << endl;
             menuPrincipal();
@@ -86,6 +87,7 @@ void Plataforma::calificarVideo(){
         break;
     default:
         return;
+        break;
     }
     
 }

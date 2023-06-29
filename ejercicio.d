@@ -1,0 +1,1 @@
+ejercicio.o: ejercicio.cpp
