@@ -49,6 +49,7 @@
         "random": "cpp",
         "tuple": "cpp",
         "iomanip": "cpp"
-    }
+    },
+    "editor.fontFamily": "Victor Mono"
     
 }
