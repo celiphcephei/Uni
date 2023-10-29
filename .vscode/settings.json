@@ -50,6 +50,6 @@
         "tuple": "cpp",
         "iomanip": "cpp"
     },
-    "editor.fontFamily": "'Victor Mono', monospace"
-    
+    "editor.fontFamily": "'Victor Mono', monospace",
+    "editor.fontLigatures": true
 }
