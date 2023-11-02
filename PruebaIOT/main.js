@@ -15,7 +15,10 @@ router.get('/', async (req, res)=>{
 });
 
 router.get('/:id', async (req, res)=>{
-    const id = Number(req.params.id);
+    let id = Number(req.params.id);
+    if(isNaN(id)){
+        id = 1;
+    }
     let payments = await Payment.findAll({
         raw: true,
         limit: 5,
